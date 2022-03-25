@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 })
 
-app.post('/upload', uploads.single('file'), (req, res) => {
+app.post('/convert', uploads.single('file'), (req, res) => {
     if(req.file){
         console.log(req.file.path);
 
